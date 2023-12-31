@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Animation</title>
+    <style>
+      body {
+        overflow: hidden; /* Ngăn chặn việc hiển thị phần vượt quá khung */
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      .animation-container {
+        overflow: hidden;
+        width: 300px; /* Độ rộng của khung cố định */
+        height: 50px; /* Chiều cao của khung cố định */
+        position: relative;
+      }
+
+      .moving-text {
+        position: absolute;
+        white-space: nowrap; /* Ngăn chặn chữ xuống dòng */
+        font-size: 20px;
+        color: #333;
+        animation: moveLeft 5s linear infinite; /* Thời gian, hình thức di chuyển và lặp lại */
+      }
+
+      @keyframes moveLeft {
+        0% {
+          left: 100%;
+        }
+        50% {
+          left: 0%;
+        }
+        100% {
+          left: -100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation-container">
+      <div class="moving-text">Chữ di chuyển sang bên trái</div>
+    </div>
+  </body>
+</html>
