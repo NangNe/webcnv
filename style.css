@@ -98,6 +98,7 @@
 .section_menu_today .block-product .item .product-thumb-info .info-action-start .product-info .price-box
 {
     color: #fed26b !important;
+    margin-top: 12px;
 }
 
 .section_deal_hot .block-product .item .product-thumb-info .info-action-start .product-info{
@@ -117,6 +118,7 @@
     animation: moveLeft 5s linear infinite !important;
     white-space: wrap !important;
     width: 450px !important;
+    margin-top: 12px;
 }
 
 .moving-text1{
@@ -125,6 +127,7 @@
     animation: moveLeft 5s linear infinite !important;
     white-space: wrap !important;
     width: 350px !important;
+    margin-top: 12px;
 }
 
 .product-action .product-info .product-name a{
@@ -190,3 +193,22 @@
 .block__main{
     padding: 1rem 0 !important;
 }
+
+.section_video.section_about_us .section_video_boxvideo:before{
+    padding-top: 0 !important;
+}
+
+@media (max-width: 767px)
+{
+    header .topbar {
+        background: #5d2c14 !important;
+    }
+}
+/* // màn hình laptop và pc */
+@media (min-width: 768px)
+{
+    .event{
+        height: 650px;
+    }
+}
+
